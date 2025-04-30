@@ -1,11 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Check from '../icons/Check.astro'
+import Github from '../icons/Github.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+import Mail from '../icons/Mail.astro'
 ---
 
 <Layout>
   <main class='h-full bg-gradient-to-b from-black via-sky-950 to-gray-800'>
-    <div class='flex flex-col mx-auto items-center justify-center'>
+    <div class='flex flex-col mx-auto items-center justify-center max-w-xl'>
       <div class='rounded-full overflow-hidden size-[400px] mt-20'>
         <img
           src='/brbghibli.webp'
@@ -29,7 +32,31 @@ import Check from '../icons/Check.astro'
         Brayan Ramirez Benitez
       </h1>
 
-      <div class='flex flex-row items-center justify-center mt-10'></div>
+      <section class='flex flex-row items-center justify-center mt-6 gap-2'>
+        <a
+          href='https://github.com/BrayanRamirezB'
+          target='_blank'
+          class='rounded-full size-12 bg-black flex items-center justify-center hover:scale-110 transition-transform duration-300'
+          ><Github class='size-7' /></a
+        >
+        <a
+          href='https://www.linkedin.com/in/brayanramirezbenitez/'
+          target='_blank'
+          class='rounded-full size-12 bg-neutral-100 flex items-center justify-center hover:scale-110 transition-transform duration-300'
+          ><LinkedIn class='size-7' /></a
+        >
+        <a
+          href='mailto:brayanramirezbenitez@gmail.com'
+          target='_blank'
+          class='rounded-full size-12 bg-blue-500 flex items-center justify-center hover:scale-110 transition-transform duration-300'
+          ><Mail class='size-7' /></a
+        >
+      </section>
+
+      <p class='mt-6 text-neutral-200 text-center text-pretty'>
+        Soy un ingeniero en sistemas computacionales con pasión por construir y
+        diseñar interfaces fáciles de usar.
+      </p>
     </div>
   </main>
 </Layout>
